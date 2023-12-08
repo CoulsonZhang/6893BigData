@@ -115,6 +115,7 @@ gradient_boosting_model = load('Mode_train/trained_models/gradient_boosting_mode
 prediction = gradient_boosting_model.predict(df_user)
 st.write("#### Gradient boosting model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
+final = prediction[0]
 
 mlp_model = load('Mode_train/trained_models/mlp_model.joblib')
 prediction = mlp_model.predict(df_user)
@@ -137,4 +138,5 @@ st.write("#### KNN model predicts team :blue[{}] is the winner".format(predictio
 team1 += 1 if prediction[0] == 1 else 0
 
 st.write("### The final prediction is:")
-st.write("#### Team :blue[{}] is the winner".format(1 if team1 > 4 else 2))
+# st.write("#### Team :blue[{}] is the winner".format(1 if team1 > 4 else 2))
+st.write("#### Team :blue[{}] is the winner".format(final))
