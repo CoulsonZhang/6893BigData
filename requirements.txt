@@ -1,3 +1,6 @@
 matplotlib
 streamlit
 pandas
+altair
+joblib
+sklearn
