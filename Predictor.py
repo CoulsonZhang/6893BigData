@@ -58,6 +58,7 @@ def user_input_features():
     t1_inhibitorKills = st.sidebar.slider('T1 Inhibitor Kills', 0, 3, 0)  # Assuming max 3 inhibitors
     t1_baronKills = st.sidebar.slider('T1 Baron Kills', 0, 5, 0)  # Assuming an arbitrary max of 5 barons
     t1_dragonKills = st.sidebar.slider('T1 Dragon Kills', 0, 5, 0)  # Assuming an arbitrary max of 5 dragons
+    t1_riftHeraldKills = st.sidebar.slider('T1 Rift Herald Kills', 0, 2, 0)  # Assuming max 2 heralds
     t2_towerKills = st.sidebar.slider('T2 Tower Kills', 0, 11, 0)  # Assuming max 11 towers
     t2_inhibitorKills = st.sidebar.slider('T2 Inhibitor Kills', 0, 3, 0)  # Assuming max 3 inhibitors
     t2_baronKills = st.sidebar.slider('T2 Baron Kills', 0, 5, 0)  # Assuming an arbitrary max of 5 barons
@@ -70,6 +71,7 @@ def user_input_features():
         't1_inhibitorKills': t1_inhibitorKills,
         't1_baronKills': t1_baronKills,
         't1_dragonKills': t1_dragonKills,
+        't1_riftHeraldKills': t1_riftHeraldKills,
         't2_towerKills': t2_towerKills,
         't2_inhibitorKills': t2_inhibitorKills,
         't2_baronKills': t2_baronKills,
