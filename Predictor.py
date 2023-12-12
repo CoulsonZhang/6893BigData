@@ -90,49 +90,49 @@ st.write("Your current input shows below:")
 st.write(df_user)
 st.write("### Based on your input metrics")
 
-logistic_model = load('Mode_train/trained_models/logistic_model.joblib')
+logistic_model = load('model_train/trained_models/logistic_model.joblib')
 prediction = logistic_model.predict(df_user)
 st.write("#### Logistic regression model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 
 
-decision_tree_model = load('Mode_train/trained_models/decision_tree_model.joblib')
+decision_tree_model = load('model_train/trained_models/decision_tree_model.joblib')
 prediction = decision_tree_model.predict(df_user)
 st.write("#### Decision tree model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 
-random_forest_model = load('Mode_train/trained_models/random_forest_model.joblib')
+random_forest_model = load('model_train/trained_models/random_forest_model.joblib')
 prediction = random_forest_model.predict(df_user)
 st.write("#### Random forest model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 
-naive_bayes_model = load('Mode_train/trained_models/naive_bayes_model.joblib')
+naive_bayes_model = load('model_train/trained_models/naive_bayes_model.joblib')
 prediction = naive_bayes_model.predict(df_user)
 st.write("#### Naive bayes model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 
-gradient_boosting_model = load('Mode_train/trained_models/gradient_boosting_model.joblib')
+gradient_boosting_model = load('model_train/trained_models/gradient_boosting_model.joblib')
 prediction = gradient_boosting_model.predict(df_user)
 st.write("#### Gradient boosting model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 final = prediction[0]
 
-mlp_model = load('Mode_train/trained_models/mlp_model.joblib')
+mlp_model = load('model_train/trained_models/mlp_model.joblib')
 prediction = mlp_model.predict(df_user)
 st.write("#### MLP model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 
-linear_svc_model = load('Mode_train/trained_models/linear_svc_model.joblib')
+linear_svc_model = load('model_train/trained_models/linear_svc_model.joblib')
 prediction = linear_svc_model.predict(df_user)
 st.write("#### Linear SVC model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 
-ovr_model = load('Mode_train/trained_models/ovr_model.joblib')
+ovr_model = load('model_train/trained_models/ovr_model.joblib')
 prediction = ovr_model.predict(df_user)
 st.write("#### OVR model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
 
-knn_model = load('Mode_train/trained_models/knn_model.joblib')
+knn_model = load('model_train/trained_models/knn_model.joblib')
 prediction = knn_model.predict(df_user)
 st.write("#### KNN model predicts team :blue[{}] is the winner".format(prediction[0]))
 team1 += 1 if prediction[0] == 1 else 0
