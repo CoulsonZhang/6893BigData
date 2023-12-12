@@ -30,7 +30,7 @@ def sidebar_bg(side_bg):
    
 
 
-bg_img_url = 'Assets/bg.png'
+bg_img_url = 'assets/bg.png'
 sidebar_bg(bg_img_url)
 
 #Create header
@@ -44,7 +44,7 @@ github = '[Code - Github](https://github.com/CoulsonZhang/6893BigData)'
 st.write(github)
 
 #image
-image = Image.open('Assets/Arcane.jpeg')
+image = Image.open('assets/arcane.jpeg')
 st.image(image)
 
 #Create and name sidebar
