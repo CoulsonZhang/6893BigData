@@ -5,4 +5,5 @@ altair
 joblib
 scikit-learn
 seaborn
-plotly
+# plotly
+plotly.express
