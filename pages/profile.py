@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-image = Image.open('assets/arcane.jpeg')
+image = Image.open('Assets/arcane.jpeg')
 st.image(image)
 
 st.write("## For more information visit: [Github](https://github.com/CoulsonZhang/6893BigData)")
