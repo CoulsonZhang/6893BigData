@@ -6,4 +6,4 @@ joblib
 scikit-learn
 seaborn
 # plotly
-plotly.express
+numpy
