@@ -30,7 +30,7 @@ def sidebar_bg(side_bg):
    
 
 
-bg_img_url = 'assets/bg.png'
+bg_img_url = 'Assets/bg.png'
 sidebar_bg(bg_img_url)
 
 #Create header
@@ -38,13 +38,9 @@ st.write("""# League of Legends Winner Predictor""")
 st.write("""## How it works""")
 st.write("Model your predicted winner by using the left side of the screen to apply value to the different metrics. This will give you a predicted winning team based on your selections. "
          "The current selections are default values.")
-st.write("## For more information visit:")
-
-github = '[Code - Github](https://github.com/CoulsonZhang/6893BigData)'
-st.write(github)
 
 #image
-image = Image.open('assets/arcane.jpeg')
+image = Image.open('assets/map.jpg')
 st.image(image)
 
 #Create and name sidebar

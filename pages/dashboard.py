@@ -14,7 +14,7 @@ A Web Page to visualize and analyze the League of Legends data from North Americ
 ''')
 
 # Reading csv data
-data = pd.read_csv('/Users/wen/Desktop/6893BigData/model_train/match_data.csv')
+data = pd.read_csv('model_train/match_data.csv')
 
 # Create 3 tabs to the main panel of the web page.
 tab1, tab2, tab3 = st.tabs(["Dataset Overview", "Numeric Features", "Categorical Features"])
