@@ -5,5 +5,5 @@ altair
 joblib
 scikit-learn
 seaborn
-plotly == 5.18.0
+plotly==5.18.0
 numpy
