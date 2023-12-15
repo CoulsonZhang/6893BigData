@@ -40,7 +40,7 @@ st.write("Model your predicted winner by using the left side of the screen to ap
          "The current selections are default values.")
 
 #image
-image = Image.open('Assets/map.jpg')
+image = Image.open('Assets/LOLland.jpg')
 st.image(image)
 
 #Create and name sidebar

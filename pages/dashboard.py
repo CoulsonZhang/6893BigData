@@ -2,10 +2,39 @@ import streamlit as st
 import pandas as pd
 # import seaborn as sns
 import plotly.express as px
+import base64
+from PIL import Image
+
+def sidebar_bg(side_bg):
+
+   side_bg_ext = 'png'
+
+   st.markdown(
+      f"""
+      <style>
+            .stApp {{
+                background-image: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()});
+                background-size: cover;  /* Cover the entire screen */
+                background-repeat: no-repeat;  /* Prevent the image from repeating */
+                background-attachment: fixed;  /* Optional: Keep the background fixed during scrolling */
+
+            }}
+        </style>
+      """,
+      unsafe_allow_html=True,
+      )
+   
+
+
+bg_img_url = 'Assets/snow.jpg'
+sidebar_bg(bg_img_url)
+
+
+
+
+
 
 st.title("League of Legends Exploratory Data Analysis and Visualization")
-
-
 
 st.markdown('''
 A Web Page to visualize and analyze the League of Legends data from North America
@@ -83,7 +112,10 @@ with tab1:
         10. t2_dragonKills: The number of Dragons killed by team 2.
         11. t2_riftHeraldKills The number of Rift Herald slain by team 2.
     ''')
-
+    st.header("HeatMap")
+    image = Image.open('Assets/heatmap.png')
+    st.image(image)
+    
     st.write("## Final Dataset", updated_data)
 
 with tab2:
