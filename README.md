@@ -53,6 +53,9 @@ Data Collection Steps:
 - Pie Chart
 - Correlation Heat Map
 
+## Demo
+![Project Website Screenshot](URL_OF_THE_IMAGE)
+
 ## Languages
 
 - **Python**
