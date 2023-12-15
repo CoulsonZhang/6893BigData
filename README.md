@@ -54,7 +54,7 @@ Data Collection Steps:
 - Correlation Heat Map
 
 ## Demo
-![Project Website Screenshot](URL_OF_THE_IMAGE)
+![Project Website Screenshot](Assets/project.png)
 
 ## Languages
 
